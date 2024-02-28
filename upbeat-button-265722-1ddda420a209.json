@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "upbeat-button-265722",
+  "private_key_id": "1ddda420a209581fb63042882370913aa78477f8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDDdXtTQieJXgCz\nkNiRIbOih1Mc7IYj/4UFh8vcy5q2lu8YYQtbN17akfHoCa4Tyu/fQoBdFs+0ugci\nwoDj5BplafKhwd5Zt+zN+j9dAH3Kw08Y+rX1KVgohkzx99PUDlgGxq+dB9IGRTiL\nplnTB/lEVeNQ6Hj7VAVZ2/wNve+T1QBZUqGNRRE8LIQRS8byoPZUiHRjLczjK5BY\nCepCcjujhDqwaKww4xj37MOX5T1wIDIwZiNF23LJhxVp7AFtg6Jk8Omi3U+dz5+n\n3ueLFdGoYozOSMhjvgIgOALLgrMYgUJlBslQlWitWqv0oHVBJgf5lpqBMQMg6N1e\nJk1LZEvpAgMBAAECggEALU/Z9DY85iqFrRsiKZsPgtkuWmE2w7ejxeFyUFBfIH8j\nFJrCwDW45qC43NsJoQsFytMm4O293x7VMqi2qp4hxGroVbmU62WpHyMpd0z63Huk\npZzRe/FGv7ZKtjmGwP1GSOPcqGG8vblkX3OEFVke30mt9f6+tT0INIm8CA+FL9bj\nvvpkpqmCcyrI+oydnzmJWDVUKwaWEOXcz7wWgaRB52b7r8EnAuUDYOz+tRvV6AJe\ngQiqoltvRllFC1nhRyS1xqorGKhb2RQw4GPuOcmyyxcl+Bi3ML8YrZkfaMYLjSov\nuKgcfYOhnb9cuDHSGQqVf2ARtP06U8JS8XN8+f5sEQKBgQD93LeFKWBTxm0NtF53\nS6vmtDqKqCbiMmIG0OgoTQL8B5GFZdW0hvJl34kluEEo0ZeVaJpIppYNL8cI4pP1\nAEYCxZUaPD/Ik4rItzMrSOnSpHpGHinnlSwacM1tKJqkX2iH6iFtSSRyxNXCuEyI\nD7fHddKqzg2Yk64C9lVzkekcXQKBgQDFGtuEb+vu3oQy7JiFDVWZ5oXzBpYBF726\n+N7CLq1y8IlLPh/v9nAuWmI9vk2BdIW0ohELjcNOJjOU85sIcyNsYDB+QTwTgpOH\ne7PLzH5h1+Eua4e2ksgjOI+NkSfpu+o5h9s2oPEEcX36WIIw+3/mzoTIGgIDs0hj\ne6QObDwU/QKBgQCJgQX+oLzGY9Ip/Cq230wLOFAFTrNRDg0+t+Un/x7AuLC/2rr4\nf6fIOl4lCjpxC6XZjcET3PelyN08GM4fhLhnQ/JRNZUu5Yvk0CZtKZ9NMz3vwOLd\nx1UONU9v8vBgXDVYeR8F/Po7GBbY087QXAMljNJBJj8DB+rXO+ppIP1tGQKBgEfM\nhcRThM0pr1xhhRmKhvEd4RNrBb92J33xZCu2Fya0aj7HbZja23h3Iiw9ozwR9xaa\nprzfshJIpiePKZ1FW9UBoQiMuNaejSEgNZl6b1sy6WsgbnpaM59o3hoCk1h4RFUa\noQbgT4t/0BUeoqY3JxsrhYDiwHManrbmdhdu49/9AoGAL8jYJH8WqIcPgh8IyFSH\nW+cfzDrwFHzoWmoj+g38K1Z2h6KEtwd2NtaqSwYrPclel3u8C0CTqrIqZKX/8HBB\n3g0s2Fv1yjByEXhBxftgfLImJkJl482aifPp9XtKZZVOVe0Pg1X0KalHsTdNhIbN\n922s9fr/mVl1rSRTGdRk1f8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "translate@upbeat-button-265722.iam.gserviceaccount.com",
+  "client_id": "110366096990087442698",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/translate%40upbeat-button-265722.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
