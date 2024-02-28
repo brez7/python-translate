@@ -3,7 +3,7 @@ from google.cloud import translate_v2 as translate
 import polib
 import io
 import chardet  # Import chardet
-# git test
+
 app = Flask(__name__)
 translate_client = translate.Client()
 
