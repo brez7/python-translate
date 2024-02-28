@@ -6,7 +6,7 @@ import chardet  # Import chardet
 
 app = Flask(__name__)
 translate_client = translate.Client()
-
+# hello
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
