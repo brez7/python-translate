@@ -2,11 +2,25 @@ from flask import Flask, request, send_file
 from google.cloud import translate_v2 as translate
 import polib
 import io
-import chardet  # Import chardet
+import chardet
+import json
 
 app = Flask(__name__)
 translate_client = translate.Client()
-#test
+
+# Load custom translations
+with open('custom_translations.json') as json_file:
+    custom_translations = json.load(json_file)['replacements']
+
+def apply_custom_translations(text, custom_translations):
+    # This function can be enhanced to handle more complex scenarios
+    for original, replacement in custom_translations.items():
+        # Case-insensitive replacement, considering 'SOMBREROS' might appear in different cases
+        text = text.replace(original.capitalize(), replacement.capitalize())
+        text = text.replace(original.upper(), replacement.upper())
+        text = text.replace(original.lower(), replacement.lower())
+    return text
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
@@ -18,22 +32,26 @@ def index():
             po = polib.pofile(raw_data.decode(encoding))
             for entry in po.untranslated_entries():
                 result = translate_client.translate(entry.msgid, target_language='es')
-                entry.msgstr = result['translatedText']
+                translated_text = result['translatedText']
+                # Apply custom translations
+                translated_text = apply_custom_translations(translated_text, custom_translations)
+                entry.msgstr = translated_text
+            
             buffer = io.BytesIO()
+            # Generate the modified PO file content directly
             buffer.write(str(po).encode('utf-8'))
             buffer.seek(0)
 
-            # Extract the first 10 characters of the file's name for the download name
             original_filename = file.filename
             download_filename = "Translated-" + (original_filename[:10] + '.po' if len(original_filename) > 10 else original_filename)
 
-            buffer.seek(0)
             return send_file(
                 buffer,
                 as_attachment=True,
-                download_name=download_filename,  # Use the updated variable here
+                download_name=download_filename,
                 mimetype='application/octet-stream'
             )
+
 
     return '''<!doctype html>
 <html lang="en">
